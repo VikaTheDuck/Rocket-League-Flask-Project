@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block title %}{{ super() }} - Car Bodies{% endblock %}
+
+{% block content %}
+<h1 style="color:orange">Car Bodies</h1>
+<p>The player can choose which vehicle they will be playing. The array of choice is large - a total of 84 cars can be played, some of them being console-exclusive however. Furthermore, each car is part of a "preset", meaning that it has particular dimensions and boost speed. These values can be important to players who wish to find a car corresponding to their taste.</p>
+<table class="table table-dark table-striped">
+    <thead>
+      <tr>
+        <th>Preset</th>
+        <th>Length</th>
+        <th>Width</th>
+        <th>Height</th>
+        <th>Standard</th>
+        <th>Boost</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td>Octane</td>
+          <td>118.0074000</td>
+          <td>84.1994100</td>
+          <td>36.15907</td>
+          <td>2.323</td>
+          <td>1.967</td>
+      </tr>
+      <tr>
+        <td>Dominus</td>
+          <td>127.9268000</td>
+          <td>83.2799500</td>
+          <td>31.30000</td>
+          <td>2.336</td>
+          <td>2.031</td>
+      </tr>
+      <tr>
+          <td>Plank</td>
+          <td>128.8198000</td>
+          <td>84.6703600</td>
+          <td>29.39440</td>
+          <td>2.342</td>
+          <td>2.014</td>
+      </tr>
+    <tr>
+          <td>Breakout</td>
+          <td>131.4924000	</td>
+          <td>80.5210000</td>
+          <td>30.300000</td>
+          <td>2.336</td>
+          <td>2.035</td>
+    <tr>
+          <td>Hybrid</td>
+          <td>127.0192000</td>
+          <td>82.1878700</td>
+          <td>34.15907</td>
+          <td>2.345	</td>
+          <td>2.002</td>
+    <tr>
+    </tbody>
+  </table>
+<blockquote><i>- Numbers taken from <a href="https://rocketleague.fandom.com/wiki/Vehicles">rocketleague.fandom.com</a></i></blockquote>
+
+{% endblock %}

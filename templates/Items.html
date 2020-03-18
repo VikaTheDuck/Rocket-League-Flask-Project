@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}{{ super() }} - Items{% endblock %}
+
+{% block content %}
+<h1 style="color:orange">Items</h1>
+<p>In the game, there are 13 collectibles items other than car bodies, that consist of:</p>
+    <ol>
+    <li>Wheels</li>
+    <li>Boosts</li>
+    <li>Antennas</li>
+    <li>Decals</li>
+    <li>Toppers</li>
+    <li>Trails</li>
+    <li>Goal Explosions</li>
+    <li>Paints</li>
+    <li>Banners</li>
+    <li>Engine Audio</li>
+    <li>Avatar Borders</li>
+    <li>Titles</li>
+    <li>Crates</li>
+    </ol>
+    <p style="color:darkblue">Each Item can be of one of the following tiers, which influences the cost, the exclusiveness and even the appearance of the item.</p>
+    <dl>
+    <dt>Common items: </dt>
+    <dd>These can be cars, decals, paints, toppers, wheels, boosts, or antennas. They drop randomly after completing online matches. They cannot be traded.</dd>
+    <dt>Uncommon items:  </dt>
+    <dd>These can be toppers or antennas. They drop randomly after completing online matches. The toppers can drop in painted and certified versions. Most painted toppers have little value with regards to trading, however some are more desired such as painted unicorn toppers and have some value. Certified and non painted uncommon items have no value in trading. These can also be traded in 5 at a time for a random drop of a rare item that is not in the crate system. This random rare drop does have the potential to be a painted rare item.</dd>
+    <dt>Rare items:</dt>
+    <dd>These can be decals, toppers, or wheels. This tier has items from both random drops and the crate system. First lets talk about the items that can be received as random drops after matches. These are the items you get when trading in 5 uncommon tier items. You can also trade in 5 of these for a random drop of a very rare tier item that is not in the crate system. The toppers and wheels can drop in painted versions. Some of these painted versions have value in trading (ie. painted wildcat ears). The non painted rare items have no value for trading. Now onto the items from the crates in this tier. Currently all rare tier items from the crates are decals. 5 decals from the same crate can be traded for a random drop of a very rare item from the same crate. Some of these decals can be painted. The painted versions occasionally have value when trading. Non painted decals have little value for trading.</dd>
+    <dt>Very Rare</dt>
+    <dd>These can be boosts, wheels, or decals. Again this tier has items that can drop randomly after matches and that are in the crate system. Talking about the items that can drop randomly. Currently these are all boosts. These are the items you have a chance of getting when trading in 5 rare items not in the crate system. They can not be traded in for anything. Most players who have been playing for a decent amount of time have multiples of these. They have no value for trading. For the items in this tier that are in the crate system. They can be boosts, wheels, decals. 5 from the same crate can be traded in for a random drop of the import tier from that same crate. The wheels all have painted versions that have value for trading. Some of the boosts have painted versions which also have value for trading. The decals don't have painted version but do have some level of animation and have a small amount of value for trading.</dd>
+    <dt>Import</dt>
+    <dd>These items are all part of the crate system. They can be cars, wheels, boosts, and there is one paint. Most of the cars are remakes of cars available without opening crates excluding the endo and mantis. The endo and mantis also come in painted versions. The painted versions have significant value for trading. The wheels can come in painted versions which often have significant value for trading. Some of the boosts have painted versions which have significant value in trading. Non painted versions of these items still have some value in trading but not much except for when they are new. For example an unpainted mantis has decent value for trading currently since it was just released with the nitro crate. 5 imports from the same crate can be traded in for a drop of a random exotic from the same crate.</dd>
+    <dt>Exotic</dt>
+    <dd>This is the highest tier in the crate system that you can trade up to. You can trade in 5 imports from the same crate for a random exotic drop from the same crate. Currently all exotic items are wheels. They all have painted versions. Painted exotic wheels are some of the most value items in the game for trading. Certain exotics are worth significantly more than others.</dd>
+    <dt>ack Market Decals:</dt>
+    <dd>These are part of the crate system and cannot be traded up to. Hence the name they are all decals. Several of them are very valuable for trading with certain ones being worth more than others. Black market decals are different from most decals in that they can be used on all customizable cars and they have a significant amount of animation with them.</dd>
+    <dt>Premium</dt>
+    <dd>These are items that are dlc. You pay for them, you get them. That simple. Can't be traded.</dd>
+    <dt>Limited</dt>
+    <dd>These are items that where released at a certain time. For example the Halloween or Christmas items. You got them as random drops after matches while playing during specific dates. Or these items were season rewards that where released at the end of each season based on the highest rank achieved by that account. The seasonal limited items are tradable but the season reward items are not.</dd>
+    </dl>
+    <img class="img-fluid"  src="{{url_for('static', filename='witch.jpg')}}" alt="witch hat topper">
+    <img class="img-fluid"  src="{{url_for('static', filename='poly.jpg')}}" alt="poly explosion">
+    <img class="img-fluid"  src="{{url_for('static', filename='tx.jpg')}}" alt="poly explosion">
+
+
+{% endblock %}
